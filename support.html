@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community World - Support</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('community.jpg'); background-size: cover; background-position: center;">
+
+    <!-- Header -->
+    <header>
+        <h1>Support</h1>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="support">
+            <h2>Support Services</h2>
+            <p>We offer various support services to the community:</p>
+            <ul>
+                <li>Food distribution every Monday</li>
+                <li>Clothing assistance</li>
+                <li>Counseling sessions (by appointment)</li>
+                <!-- Add more support services as needed -->
+            </ul>
+            <h2>Contact Form</h2>
+            <form action="submit_support_form.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Include JavaScript file -->
+    <script src="js/app.js"></script>
+</body>
+</html>

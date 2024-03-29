@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community World - Activities</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <body style="background-image: url('community.jpg'); background-size: cover; background-position: center;"></body>
+
+    <!-- Header -->
+    <header>
+        <h1>Activities</h1>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="activities">
+            <h2>Our Activities</h2>
+            <ul>
+                <li>
+                    <img src="img/yoga.jpg" alt="Yoga" width="500" height="300">
+                    Yoga sessions <button onclick="showDetails('yoga')">View Details</button>
+                </li>
+                <li>
+                    <img src="img/badminton.jpg" alt="Badminton" width="500" height="300">
+                    Badminton tournaments <button onclick="showDetails('badminton')">View Details</button>
+                </li>
+                <li>
+                    <img src="img/chess.jpg" alt="Chess" width="500" height="300">
+                    Chess club meetings <button onclick="showDetails('chess')">View Details</button>
+                </li>
+                <li>
+                    <img src="img/art.jpg" alt="Art" width="500" height="300">
+                    Art workshops <button onclick="showDetails('art')">View Details</button>
+                </li>
+                <li>
+                    <img src="img/dance.jpg" alt="Dance" width="500" height="300">
+                    Dance classes <button onclick="showDetails('dance')">View Details</button>
+                </li>
+                <li>
+                    <img src="img/language.jpg" alt="Language" width="500" height="300">
+                    Language exchange sessions <button onclick="showDetails('language')">View Details</button>
+                </li>
+                <!-- Add more activities as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Include JavaScript file -->
+    <script src="js/app.js"></script>
+    <script>
+        function showDetails(activity) {
+            switch (activity) {
+                case 'yoga':
+                    alert('Yoga Session Details:\nTiming: Monday and Wednesday, 6:00 PM - 7:00 PM\nDuration: 1 hour');
+                    break;
+                case 'badminton':
+                    alert('Badminton Tournament Details:\nDay: Saturday\nTiming: 10:00 AM - 1:00 PM\nDuration: 3 hours');
+                    break;
+                case 'chess':
+                    alert('Chess Club Meeting Details:\nDay: Tuesday and Thursday\nTiming: 4:00 PM - 6:00 PM\nDuration: 2 hours');
+                    break;
+                case 'art':
+                    alert('Art Workshop Details:\nDay: Friday\nTiming: 3:00 PM - 5:00 PM\nDuration: 2 hours');
+                    break;
+                case 'dance':
+                    alert('Dance Class Details:\nDay: Monday and Thursday\nTiming: 7:00 PM - 8:30 PM\nDuration: 1.5 hours');
+                    break;
+                case 'language':
+                    alert('Language Exchange Session Details:\nDay: Wednesday\nTiming: 5:00 PM - 7:00 PM\nDuration: 2 hours');
+                    break;
+                // Add more cases for additional activities
+                default:
+                    alert('Details not available for this activity.');
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+/* Global Styles */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    background-image: url('../img/community.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #fff;
+    color: #333;  /* Change font color to white */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #007bff; /* A nice shade of blue */
+    padding: 10px 0; /* Add some padding on top and bottom */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Ensure contrast is high for readability */
+    text-decoration: none;
+    font-size: 18px; /* Larger font size for better readability */
+    padding: 8px 12px; /* Padding for better touch targets */
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Change font color to white */
+}
+
+/* Home Page Styles */
+
+#home {
+    background-image: url('../img/2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative; /* Added for positioning the pseudo-element */
+    color: #fff; /* Ensure text color is white for contrast */
+}
+
+/* Add a semi-transparent overlay */
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    z-index: -1; /* Ensure the overlay is behind the text content */
+}
+
+#home h2 {
+    font-size: 36px; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+#home h2, #home p {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#home p {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.6;
+}
+
+.hero {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Activities Page Styles */
+
+#activities {
+    background-image: url('../img/activities-background.jpg');
+    padding: 20px;
+    text-align: center; /* Center-align the content */
+}
+
+/* Semi-transparent background for text */
+#activities h2, #activities li {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: #fff; /* White text color */
+    margin: 10px 0; /* Add some space around each element */
+    padding: 10px; /* Padding inside the elements */
+}
+
+/* Style the list to display as a grid */
+#activities ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create a responsive grid */
+    gap: 20px; /* Space between grid items */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+#activities img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: round corners for images */
+}
+
+#activities button {
+    display: block; /* Make buttons block level for full width */
+    margin: 10px auto; /* Center buttons horizontally */
+    padding: 10px 20px; /* Add padding */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#activities button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Events Page Styles */
+#events {
+    background-image: url('../img/events-background.jpg'); /* Adjust if you have a specific image */
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive cards */
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-card {
+    background-color: #fff; /* Card background */
+    color: #000; /* Text color */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Card shadow */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.event-card h3 {
+    margin: 0 0 20px 0; /* Spacing for the title */
+}
+
+.event-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.event-card button:hover {
+    background-color: #0056b3;
+}
+
+#eventDescription {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #ffffff; /* White text for readability */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px; /* Adjust based on your preference */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    display: none; /* Hidden by default */
+}
+
+#registrationForm {
+    background-color: rgba(0, 0, 0, 0.8); /* Similar styling for consistency */
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: none; /* Hidden by default */
+}
+
+/* Additional styling for the form and buttons for better visibility */
+button, input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Support Page Styles */
+
+#support {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #ffffff; /* White text for better readability */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners for aesthetics */
+    margin: 20px auto; /* Center the section with some margin */
+    max-width: 800px; /* Limit the width for readability */
+}
+
+#support h2, #support p, #support ul, #support form {
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+    margin: 10px 0; /* Space out elements */
+    padding: 10px; /* Padding for each element */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+#support form input[type="submit"] {
+    background-color: #007bff; /* Blue background for the submit button */
+    color: #ffffff; /* White text */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Cursor changes to pointer to indicate clickable */
+}
+
+#support form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
